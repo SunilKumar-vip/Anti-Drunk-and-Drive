@@ -1,0 +1,31 @@
+/* Check wether given no. is strong Number or not
+Strong Number - Given no. individual digit factorial and sum then the result must be equal to given no.
+Eg: 145,40585  i/p - 145  operation ; 145 - 1!+4!+5!=1+24+120=145 = given number */
+
+#include<stdio.h>
+void main()
+{
+    int n,fact,temp,i,sum=0,rem;
+    scanf("%d",&n);
+    temp=n;
+    while(n)
+   {
+     rem=n%10;
+     fact=1;
+     for(i=1;i<=rem;i++)
+      {
+      fact=fact*i;
+      }
+      sum=sum+fact;
+      n=n/10;
+   }
+   if(sum==temp)
+   {
+       printf("%d is strong num",temp);
+   }
+   else
+   {
+       printf("%d is not strong num",temp);
+   }
+    
+} 
