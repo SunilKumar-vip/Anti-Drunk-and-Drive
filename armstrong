@@ -1,0 +1,40 @@
+/*Check given number is ARMSTRONG or not without using math.h funtion
+
+ARMSTRONG number - Given number individual digits should be done power of its count, that shouldbe equal to the given number
+Steps to find ARMSTRONG no.                                                      Example:
+step 1. Find out the count value of a given no.                                  Given no.  153 -> count = 3
+step 2. Each individal digit power or multiply countnumber of times              sum        (3*3*3)+(5*5*5)+(1*1*1) = 27+125+1 = 153.   
+step 3. Given no. = sum. it is a plaindrome else not                                                                                                                                      
+Eg: i/p - Given no. is 153 o/p - 153 */ 
+#include<stdio.h>
+void main()
+{
+    int n,c=0,i,temp,pow,arm=0,rem;
+    scanf("%d",&n);
+    temp=n;
+    while(n)
+    {
+        n=n/10;
+        c++;
+    }
+    n=temp;
+    while(n)
+    {
+        rem=n%10;
+        pow=1;
+        for(i=1;i<=c;i++)
+        {
+            pow=pow*rem;
+        }
+        arm=arm+pow;
+        n=n/10;
+    }
+    if(arm==temp)
+    {
+        printf("%d is a palindrome",temp);
+    }
+    else
+    {
+        printf("%d is a not palindrome",temp);
+    }
+}
