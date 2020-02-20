@@ -1,0 +1,28 @@
+//Even or Odd or Zero - Trick 1 by using %(modulo operator)
+
+#include<stdio.h>
+void main()
+{
+    int n;
+    printf("Enter a number to check whether it is even,odd or zero\n");
+    scanf("%d",&n);
+    if(n==0)
+    {
+        printf("%d is neither odd nor even but it is equals to 0",n);
+    }
+    else if(n%2==0)
+    {
+        printf("%d is even",n);
+    }
+    else
+    {
+       printf("%d is odd",n); 
+    }
+    
+}
+
+Output : 
+
+Enter a number to check whether it is even,odd or zero                                                                                          
+4                                                                                                                                               
+4 is even    
