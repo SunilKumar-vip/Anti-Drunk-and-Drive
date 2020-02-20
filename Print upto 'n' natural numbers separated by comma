@@ -1,0 +1,15 @@
+//Print upto 'n' natural numbers separated by comma i/p:5 o/p:1,2,3,4,5
+#include<stdio.h>
+void main()
+{
+    int n,a[10000],i,j;
+    scanf("%d",&n);
+    for(j=1,i=1;j<n;i=i++,j++)
+    {
+        printf("%d,",j);
+    }
+    if(j=n)
+    {
+        printf("%d",j);
+    }
+}
