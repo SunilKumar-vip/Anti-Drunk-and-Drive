@@ -1,0 +1,22 @@
+//Swaping of 2 numbers - trick 1 by using 3 variables
+
+#include<stdio.h>
+void main()
+{
+    int a,b,temp;
+    printf("a,b values before swaping\n");
+    scanf("%d%d",&a,&b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("a,b values after swaping \n%d\n%d",a,b);
+}
+
+output :
+
+a,b values before swaping                                                                                                                       
+20                                                                                                                                              
+30                                                                                                                                              
+a,b values after swaping                                                                                                                        
+30                                                                                                                                              
+20    
