@@ -1,0 +1,27 @@
+//Even or Odd or Zero - Trick 2 without using %(modulo operator)
+
+#include<stdio.h>
+void main()
+{
+    int n;
+    printf("Enter a number to check whether it is even,odd or zero\n");
+    scanf("%d",&n);
+    if(n==0)
+    {
+        printf("%d is neither odd nor even",n);
+    }
+    else if(n/2*2==n)
+    {
+        printf("%d is even",n);
+    }
+    else
+    {
+       printf("%d is odd",n); 
+    }
+}
+
+Output : 
+
+Enter a number to check whether it is even,odd or zero                                                                                        
+6                                                                                                                                             
+6 is even 
